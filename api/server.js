@@ -6,6 +6,8 @@ const apiRouter = require('./apiRouter.js');
 
 const server = express();
 
+// pass in the server to use in the configureMiddleware file
+configureMiddleware(server);
 
 server.use('/api', apiRouter);
 
